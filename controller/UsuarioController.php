@@ -4,7 +4,7 @@
 class UsuarioController{
 
     public function listar(){
-                
+        
         require_once 'DAO/UsuarioDAO.php';
 
         $usuario = new UsuarioDAO();
