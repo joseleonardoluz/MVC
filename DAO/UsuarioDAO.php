@@ -4,7 +4,7 @@ require_once 'config/conexion.php';
  class UsuarioDAO{
       
     public $cn;
-    public $INSERT = "SELECT * FROM usuarios ORDER BY id DESC";
+    public $INSERT = "INSERT * FROM usuarios ORDER BY id DESC";
     public $UPDATE = "UPDATE usuarios SET nombre=?,  apellido=?, email=?, pass=?, fecha=? WHERE id=?";
     public $DELETE = "DELETE FROM usuarios WHERE id=?";
     public $SELECT = "SELECT * FROM usuarios"; 
