@@ -1,7 +1,7 @@
 <?php
 require_once 'config/conexion.php';
 
- class USuarioDAO{
+ class UsuarioDAO{
       
      private $conexion;
      private $INSERT = "SELECT * FROM usuarios ORDER BY id DESC";
