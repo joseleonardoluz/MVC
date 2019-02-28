@@ -7,7 +7,7 @@
 
 
  if (isset($_GET['controller'])) {
-    $nombre_controlador = $_GET['controller'];
+    $nombre_controlador = $_GET['controller'].'Controller';
    
  }else{
     echo "La pagina no existe";
@@ -21,10 +21,10 @@
        $action = $_GET['action'];
        $controlador->$action();
      }else{
-       echo "La pagina no existe";
+       echo "La pagina no existe1";
      }
  }else{
-   echo "La pagina no existe";
+   echo "La pagina no existe2";
  }
 
 

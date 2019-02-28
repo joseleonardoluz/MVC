@@ -5,11 +5,12 @@ class UsuarioController{
 
     public function listar(){
         
-        require_once 'DAO/UsuarioDAO.php';
+        require_once 'models/usuario.php';
 
-        $usuario = new UsuarioDAO();
-        $allUsers = $usuario->todos();        
-
+        $usuario = new Usuario();
+        $all = $usuario->obtenerTodos('usuarios');        
+        // var_dump($all);
+        // die();
         require_once 'views/Todos.php';
     }
 
