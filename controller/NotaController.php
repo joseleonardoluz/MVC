@@ -2,12 +2,13 @@
 
   class NotaController{
 
-    public function listar(){
-        require_once 'models/Nota.php';  
+    public function listar(){        
 
-        $nota = new Nota();
-        $nota->setNombre('Titulo de la nota');
-        $nota->setContenido('Este es el body o contenido de la nota');
+        require_once 'DAO/NotaDAO.php'; 
+
+        $nota = new NotaDAO();   
+
+        $notas = $nota->todos();
 
         require_once 'views/viewNota/listar.php';
     } 

@@ -1,3 +1,6 @@
-<h3><?=$nota->getNombre();?></h3>
-<br>
-<h5><?=$nota->getContenido();?></h5>
+<h3>Todas las notas</h3>
+
+<?php while($nota = $notas->fetch_object()):?>
+
+   <?=$nota->titulo?> - <?=$nota->contenido?> - <?=$nota->fecha?><br/>
+<?php endwhile;?>
