@@ -5,7 +5,7 @@ class UsuarioController{
 
     public function listar(){
         
-        require_once 'models/usuario.php';
+        require_once 'models/Usuario.php';
 
         $usuario = new Usuario();
         $all = $usuario->obtenerTodos('usuarios');        
